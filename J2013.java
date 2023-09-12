@@ -11,7 +11,7 @@ public class J2013 {
         int run=1;
         while(true){
             boolean ok = false;
-            for(int i=1;i<n-run;++i){
+            for(int i=1;i<=n-run;++i){
                 if(arr[i] < arr[i-1]){
                     int c = arr[i];
                     arr[i] = arr[i-1];
@@ -19,7 +19,6 @@ public class J2013 {
                     ok = true;
                 }
             }
-            System.out.println();
             if(!ok){
                 break;
             }
@@ -30,6 +29,7 @@ public class J2013 {
                 System.out.print(arr[j]);
                 System.out.print(" ");
             }
+            System.out.println();
             run++;
         }
     }
